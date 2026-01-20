@@ -1,22 +1,20 @@
 # EasyGenerator Frontend
 
-React.js frontend for EasyGenerator, built with Vite and TypeScript. It features a modern, premium UI with clean Light mode aesthetics, including Signup, Signin, and a protected User Profile page.
+React.js frontend for EasyGenerator, built with Vite and TypeScript.
 
 ## Tech Stack
 
 - **Framework**: React.js 19 (Vite)
 - **Language**: TypeScript
-- **Styling**: Vanilla CSS (Custom Glassmorphism and Modern UI)
 - **Icons**: Lucide React
 - **HTTP Client**: Axios (with credentials for httpOnly cookies)
-- **Routing**: React Router DOM v7
 - **Notifications**: Toastify-js
 
 ## Prerequisites
 
 - Node.js (v18 or higher)
 - npm or yarn
-- EasyGenerator Backend running on port 3000
+- EasyGenerator Backend running on port 3000 or as set in env file
 
 ## Installation
 
@@ -61,6 +59,4 @@ npm run preview
 ## Key Features
 
 - **Auth Integration**: Securely integrates with NestJS backend using httpOnly cookies.
-- **Form Validation**: Complex password validation on signup (8+ chars, capital letter, number).
-- **Smooth UX**: Conditional password policy visibility and bottom-centered notifications.
-- **Premium Design**: Modern light theme with a custom branded logo and responsive layout.
+- **Form Validation**: Complex password validation on signup (8+ chars, capital letter, number) as requested.
