@@ -31,6 +31,17 @@ const SignupPage: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
+    if (name.length < 3) {
+      Toastify({
+        text: "Name must be at least 3 characters long",
+        duration: 4000,
+        gravity: "bottom",
+        position: "center",
+        backgroundColor: "var(--error)"
+      }).showToast();
+      return;
+    }
+
     const passwordError = validatePassword(password);
     if (passwordError) {
       setShowPolicy(true);
